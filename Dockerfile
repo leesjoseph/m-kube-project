@@ -1,7 +1,8 @@
-FROM centos:7
+FROM oraclelinux:7.9
 MAINTAINER leesjoseph@pm.me
 RUN yum install -y httpd \
  zip\
+ wget\
  unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
